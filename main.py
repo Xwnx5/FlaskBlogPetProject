@@ -109,7 +109,7 @@ def contact():
 def login():
     if 'userLogged' in session:
         return redirect(url_for('profile', username=session['userLogged']))
-    elif request.method == 'POST' and request.form['username'] == 'selfedu' and request.form['psw'] == '123':
+    elif request.method == 'POST' and request.form['username'] == 'nikita' and request.form['psw'] == '123':
         session['userLogged'] = request.form['username']
         return redirect(url_for('profile', username=session['userLogged']))
 
